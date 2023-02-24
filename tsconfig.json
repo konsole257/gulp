@@ -1,0 +1,11 @@
+{
+    "files": [
+        "./public/src/resources/js/main.ts",
+        "./public/src/resources/js/greet.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es2015",
+        "module": "es2015",
+    }
+}
