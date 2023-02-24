@@ -1,0 +1,24 @@
+/**
+* --------------------------------
+* Container
+* --------------------------------
+*/
+
+#wrap {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'h1'
+    'container'
+    'footer';
+
+    h1 {
+        grid-area: h1;
+        height: 50px;
+    }
+}
+
+#container {
+    grid-area: container;
+    min-height: calc(100vh - 50px - 100px - 100px);
+}

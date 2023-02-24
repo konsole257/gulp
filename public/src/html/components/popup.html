@@ -1,0 +1,30 @@
+{{if (context.prop) { <div id="{{prop.id}}" class="popup{{if (context.prop.type) {{{prop.type}}}}} {{if (context.prop.class) {{{prop.class}}}}}">
+    <div class="inner">
+        {{if (context.prop.tit) {
+        <header class="header">
+            <h3 class="tit">{{prop.tit}}</h3>
+            <button type="button" class="btn mute btn_close" onclick="fn.popup('close', this);">닫기</button>
+        </header>
+        }}}
+
+        {{if (!context.prop.tit) {
+        <button type="button" class="btn mute btn_close" onclick="fn.popup('close', this);">닫기</button>
+        }}}
+
+        <div class="contents">
+            {{if (context.prop.content) { {{include('{{prop.content}}')}} }}}
+            {{if (context.prop.type === 'alert') {
+                <div class="btn_area">
+                    <button type="button" class="btn fill btn_close" onclick="fn.popup('close', this);">확인</button>
+                </div>
+            }}}
+            {{if (context.prop.type === 'confirm') {
+                <div class="btn_area">
+                    <button type="button" class="btn stroke btn_close" onclick="fn.popup('close', this);">예</button>
+                    <button type="button" class="btn fill btn_close" onclick="fn.popup('close', this);">아니오</button>
+                </div>
+            }}}
+        </div>
+    </div>
+</div> }}}
+<hr id="{{prop.id}}_end">

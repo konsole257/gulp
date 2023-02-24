@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/**
+* --------------------------------
+* Common
+* --------------------------------
+*/
+
+@import
+    "./utils/_variable",
+    "./utils/_function",
+    "./utils/_mixin";
+
+@import
+    "./shared/_init";
+
+@import
+    "./components/*";
+
+@import
+    "./shared/*";
+
+@import
+    "./popup";
+
+@import
+    "./icon.min.css";
+
+[class^="icon"] {
+    display: inline-block;
+}
+
+.container-query {
+    container-type: inline-size;
+    container-name: test;
+
+    div {
+        height: 100px;
+        background-color: #eee;
+    }
+}
+
+@container test (min-width: 1200px) {
+    .container-type {
+        div {
+            background-color: #000;
+        }
+    }
+}

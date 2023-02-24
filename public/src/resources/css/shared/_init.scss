@@ -1,0 +1,23 @@
+/**
+* --------------------------------
+* Init CSS
+* --------------------------------
+*/
+
+html {position: relative;font-family: 폰트;font-weight: 400;font-size: 16px;line-height: 1;letter-spacing: -0.03em;color: #000;word-break: keep-all;word-wrap: break-word;}
+h1,h2,h3,h4,h5,h6 {font-weight: 800;margin: 0;}
+ul, ol {list-style: none;margin: 0;padding: 0;}
+fieldset {margin: 0;padding: 0;border: none;}
+textarea {resize: none;outline: none;font-family: 폰트;}
+a {text-decoration: none;color: #000;;-webkit-tap-highlight-color: transparent;cursor: pointer;}
+p {margin: 0;}
+em {font-style: normal;}
+table {table-layout: fixed;width: 100%;border-collapse: collapse;border-spacing: 0;}
+th {padding: 0;}
+td {padding: 0;}
+dl,dd {margin: 0;}
+figure {margin: 0;}
+img {vertical-align: top;}
+hr {display: none;}
+address {font-style: normal;}
+label {display: inline-block;}

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	
+<head>
+	{{include('./shared/config.html', {
+		"prop": {
+			"page": "{{prop.page}}",
+			"pageName": "{{prop.pageName}}"
+		}
+	})}}
+</head>
+
+<body>
+	<noscript>
+	이 사이트를 이용하기 위해서 자바스크립트를 활성화 시킬 필요가 있습니다.
+	<a href="http://www.enable-javascript.com/ko/" target="_blank">브라우저에서 자바스크립트를 활성화하는 방법</a>을 참고 하세요.
+	</noscript>
+
+	<a href="#container" class="skip">본문 영역으로 바로가기</a>
+
+	<div id="wrap" class="{{prop.page}}">
+		<h1>Headings1</h1>
+		
+		<!-- header // -->
+		{{include('./shared/header.html')}}
+
+		<hr id="header-end">
+		<!-- // header -->
+
+		<!-- contents // -->
+		<main id="container">
+			{{include('{{prop.content}}', {
+				"prop": {
+					"page": "{{prop.page}}",
+					"pageName": "{{prop.pageName}}"
+				}
+			})}}
+		</main>
+
+		<hr id="container-end">
+		<!-- // contents -->
+
+		<!-- footer // -->
+		{{include('./shared/footer.html', {
+			"prop": {
+				"page": "{{prop.page}}",
+				"pageName": "{{prop.pageName}}"
+			}
+		})}}
+		
+		<hr id="footer-end">
+		<!-- // footer -->
+	</div>
+
+</body>
+</html>

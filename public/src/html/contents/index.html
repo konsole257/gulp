@@ -1,0 +1,62 @@
+<div id="contents">
+    <h2>Headings2</h2>
+    <p>Contents</p>
+
+    <a href="{{dirRoot}}/html/sub1/index.html">Sub1</a>
+
+    <div>
+        <i class="icon-lpay"></i>
+        <i class="icon-naverpay"></i>
+    </div>
+
+    <img src="{{dirRoot}}/resources/images/common/ic_rentcar_fail.svg" alt="">
+
+    <img src="{{dirRoot}}/resources/images/common/jpg.webp" alt="">
+
+    <button type="button" onclick="fn.htmlOnClick();">Button</button>
+
+    <div>
+        <input list="items">
+        <datalist id="items">
+            <option value="Marko Denic"></option>
+            <option value="FreeCodeCamp"></option>
+            <option value="FreeCodeTools"></option>
+            <option value="Web Development"></option>
+            <option value="Web Developer"></option>
+        </datalist>
+    </div>
+
+    <div class="container-query">
+        <div></div>
+    </div>
+
+    <!-- 탭메뉴 // -->
+    {{include('./components/tabMenu.html')}}
+
+    <hr id="tab-menu-end">
+    <!-- // 탭메뉴 -->
+
+    <!-- 페이징 // -->
+    {{include('./components/pagination.html')}}
+
+    <hr id="pagination-end">
+    <!-- // 페이징 -->
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    // const newParent = new Parent(100, 200);
+    // console.log(`newParent result: ${newParent.calcResult}`);
+
+    // const newChildren = new Children(100, 200);
+    // console.log(`newChildren result: ${newChildren.calcResult}`);
+    // // console.log(newChildren.test);
+    // // console.log(newChildren.calc());
+    // // console.log(newChildren.log());
+
+    // const newTs = new Ts(10, 50, 'new');
+    // console.log(`newTs result: ${newTs.calcResult}`);
+    // console.log(`newTs Text: ${newTs.txt}`);
+
+});
+</script>
